@@ -41,10 +41,10 @@
             app:layout_constraintTop_toTopOf="parent"
             app:lineHeight="39sp" />
 
-        <TextView
+        <EditText
             android:id="@+id/enter_email"
             android:layout_width="333dp"
-            android:layout_height="31dp"
+            android:layout_height="50dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="39dp"
@@ -56,73 +56,37 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <View
-            android:id="@+id/line_1"
-            android:layout_width="349dp"
-            android:layout_height="1dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="39dp"
-            android:layout_marginTop="40dp"
-            android:background="@drawable/line"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/enter_email" />
-
-        <TextView
+        <EditText
             android:id="@+id/create_user"
             android:layout_width="333dp"
-            android:layout_height="31dp"
+            android:layout_height="50dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="39dp"
-            android:layout_marginTop="47dp"
+            android:layout_marginTop="71dp"
             android:fontFamily="@font/inter"
             android:gravity="center_vertical"
             android:hint="@string/create_user"
             android:textAppearance="@style/create_user"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/line_1" />
+            app:layout_constraintTop_toBottomOf="@+id/enter_email" />
 
-        <View
-            android:id="@+id/line_2"
-            android:layout_width="349dp"
-            android:layout_height="2dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="39dp"
-            android:layout_marginTop="40dp"
-            android:background="@drawable/line"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/create_user" />
-
-        <TextView
+        <EditText
             android:id="@+id/create_pass"
             android:layout_width="333dp"
-            android:layout_height="31dp"
+            android:layout_height="50dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginStart="39dp"
-            android:layout_marginTop="47dp"
+            android:layout_marginTop="71dp"
             android:fontFamily="@font/inter"
             android:gravity="center_vertical"
             android:hint="@string/create_pass"
             android:textAppearance="@style/create_pass"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/line_2" />
+            app:layout_constraintTop_toBottomOf="@+id/create_user" />
 
-        <View
-            android:id="@+id/line_3"
-            android:layout_width="349dp"
-            android:layout_height="2dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginStart="36dp"
-            android:layout_marginTop="40dp"
-            android:background="@drawable/line"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/create_pass" />
-
-        <View
+        <Button
             android:id="@+id/btn_join_now"
             android:layout_width="229dp"
             android:layout_height="54dp"
@@ -133,6 +97,9 @@
             android:layout_marginEnd="100dp"
             android:layout_marginBottom="54dp"
             android:background="@drawable/rectangle_1"
+            android:text="@string/sing_up"
+            android:textColor="@color/text_color"
+            android:textSize="36dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.47"
@@ -140,22 +107,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.926" />
 
-        <TextView
-            android:id="@+id/sign_up"
-            android:layout_width="132dp"
-            android:layout_height="62dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:fontFamily="@font/inder"
-            android:gravity="center_horizontal|center_vertical"
-            android:text="@string/sing_up"
-            android:textAppearance="@style/sign_up"
-            app:layout_constraintBottom_toBottomOf="@+id/btn_join_now"
-            app:layout_constraintEnd_toEndOf="@+id/btn_join_now"
-            app:layout_constraintHorizontal_bias="0.494"
-            app:layout_constraintStart_toStartOf="@+id/btn_join_now"
-            app:layout_constraintTop_toTopOf="@+id/btn_join_now"
-            app:layout_constraintVertical_bias="0.0" />
+
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
