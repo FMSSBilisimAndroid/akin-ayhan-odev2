@@ -12,5 +12,164 @@
         android:layout_height="match_parent"
         tools:context=".activities.LoginActivity">
 
+
+        <View
+            android:id="@+id/union"
+            android:layout_width="643dp"
+            android:layout_height="713dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="152dp"
+            android:background="@drawable/union_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/welcome_bac"
+            android:layout_width="241dp"
+            android:layout_height="61dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/inter"
+            android:gravity="center_vertical"
+            android:text="@string/welcome_bac"
+            android:textAppearance="@style/welcome_bac"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lineHeight="39sp" />
+
+        <TextView
+            android:id="@+id/enter_your_"
+            android:layout_width="338dp"
+            android:layout_height="61dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@font/inter"
+            android:gravity="center_vertical"
+            android:text="@string/enter_your_"
+            android:textAppearance="@style/enter_your_"
+            app:layout_constraintStart_toStartOf="@+id/welcome_bac"
+            app:layout_constraintTop_toBottomOf="@+id/welcome_bac"
+            app:lineHeight="22sp" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="333dp"
+            android:layout_height="31dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="280dp"
+            android:fontFamily="@font/inter"
+            android:gravity="center_vertical"
+            android:hint="@string/username"
+            android:textAppearance="@style/username"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lineHeight="31sp" />
+
+        <View
+            android:id="@+id/line_1"
+            android:layout_width="349dp"
+            android:layout_height="1dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/line"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/username" />
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="333dp"
+            android:layout_height="31dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/inter"
+            android:gravity="center_vertical"
+            android:hint="@string/password"
+            android:textAppearance="@style/password"
+            app:layout_constraintEnd_toEndOf="@+id/username"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/username"
+            app:layout_constraintTop_toBottomOf="@+id/line_1"
+            app:lineHeight="31sp" />
+
+        <View
+            android:id="@+id/line_2"
+            android:layout_width="349dp"
+            android:layout_height="1dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/line"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password" />
+
+        <View
+            android:id="@+id/btn_join_now"
+            android:layout_width="229dp"
+            android:layout_height="54dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="41dp"
+            android:background="@drawable/rectangle_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line_2" />
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="104dp"
+            android:layout_height="62dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:fontFamily="@font/inder"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/login"
+            android:textAppearance="@style/login"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_join_now"
+            app:layout_constraintEnd_toEndOf="@+id/btn_join_now"
+            app:layout_constraintStart_toStartOf="@+id/btn_join_now"
+            app:layout_constraintTop_toTopOf="@+id/btn_join_now"
+            app:lineHeight="45sp" />
+
+        <TextView
+            android:id="@+id/forgotten_p"
+            android:layout_width="160dp"
+            android:layout_height="31dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/forgotten_p"
+            android:textAppearance="@style/forgotten_p"
+            app:layout_constraintEnd_toEndOf="@+id/btn_join_now"
+            app:layout_constraintStart_toStartOf="@+id/btn_join_now"
+            app:layout_constraintTop_toBottomOf="@+id/btn_join_now"
+            app:lineHeight="18sp" />
+
+        <TextView
+            android:id="@+id/txt_or_create"
+            android:layout_width="183dp"
+            android:layout_height="31dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/or_create_a"
+            android:textAppearance="@style/or_create_a"
+            app:layout_constraintEnd_toEndOf="@+id/forgotten_p"
+            app:layout_constraintStart_toStartOf="@+id/forgotten_p"
+            app:layout_constraintTop_toBottomOf="@+id/forgotten_p"
+            app:lineHeight="18sp" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

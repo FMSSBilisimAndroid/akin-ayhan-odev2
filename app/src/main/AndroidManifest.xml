@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Odev2FMSS">
         <activity
-            android:name=".SingUpActivity"
+            android:name=".activities.SingUpActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".activities.LoginActivity"
             android:exported="false" />
         <activity
             android:name=".activities.GetStartedActivity"
