@@ -12,6 +12,7 @@ class GetStartedActivity : AppCompatActivity() {
     private lateinit var loginIntent: Intent
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        setTheme(R.style.Theme_Odev2FMSS)
         super.onCreate(savedInstanceState)
         loginIntent = Intent(this, LoginActivity::class.java)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_get_started)
