@@ -12,6 +12,7 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var singUpIntent: Intent
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        setTheme(R.style.Theme_Odev2FMSS)
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this,R.layout.activity_login)
         singUpIntent = Intent(this,SingUpActivity::class.java)
